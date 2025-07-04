@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>irotogi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!---------- ヘッダー ---------->
+  <header>
+    <div class="header-inner">
+      <a href="index.html">
+      <img src="images/irotogi_logo.png" alt="ロゴ">
+    </a>
+    <!-- ナビゲーション -->
+     <nav id="nav-pc">
+     <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+     </ul>
+    </nav>
+    </div>
+
+  
+
+
+    <!-- スマホ用メニューボタン -->
+    <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+    <!-- スマホ用ナビゲーション -->
+    <nav id="nav-sp">
+      
+        <ul>
+          <li>
+            <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+          </li>
+          <li><a class="menu" href="index.html#about" onclick="document.getElementById('nav-sp').style.display = 'none'">About</a></li>
+          <li><a class="menu" href="index.html#service" onclick="document.getElementById('nav-sp').style.display = 'none'">Service</a></li>
+          <li><a class="menu" href="index.html#works" onclick="document.getElementById('nav-sp').style.display = 'none'">Works</a></li>
+          <li><a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">Contact</a></li>
+        </ul>
+      
+      <div id="sns">
+        <a href="https://twitter.com/samuraijuku" class="sns">
+          <img src="images/x-twitter-brands.png" alt="Twitterのリンク">
+        </a>
+        <a href="https://www.facebook.com/sejuku2013" class="sns">
+          <img src="images/instagram-brands.png" alt="Instagramのリンク">
+        </a>
+      </div>
+    </nav>
+    
+  </header>
+
+  <main>
+    <!---------- メインページ ---------->
+    <section id="main">
+      <picture>
+        <source media="(max-width: 767px)" srcset="images/logo-sp.png">
+        <img src="images/irotogi_mainlogo.png" alt="トップページのロゴ">
+      </picture>
+    </section>
+
+
+    <!---------- ABOUT ---------->
+     <section id="about">
+      <!-- 見出し -->
+      <div class="section-inner">
+        <div class="section-title">
+        <div class="big-title">About</div>
+        <h1>About</h1>
+      </div>
+        <p>-自己紹介-</p>
+
+      <!-- 自己紹介文 -->
+       <div class="about-content">
+        <div class="about-item">
+        <div class="about-image">
+          <img src="images/about_me.png" alt="自分の写真">
+        </div>
+        </div>
+        <div class="about-item">
+        <div class="about-text">
+          <h2>Watanabe Ayaka</h2>
+          <h3>渡邊 彩伽</h3>
+          <p>
+            前職は日本代表としてアスリート活動に取り組む。<br class="br-pc"> <br class="br-sp">
+            引退を機にデザインとプログラミングを学び、<br class="br-sp">Web制作の道へ。<br class="br-pc"> <br class="br-sp">
+            現在は「柔らかさ」と「芯のある力強さ」を<br class="br-sp">感じられる<br class="br-pc">
+            デザイン・Webサイトを目指して<br class="br-sp">制作に取り組んでいます。
+          </p>
+        </div>
+        <a href="about.html"  class="btn-about">
+          <img src="images/button_more.png" alt="もっと読む">
+        </a>
+        </div>
+       </div>
+      </div>
+     </section>
+
+
+     <!---------- SERVICE ---------->
+      <section id="service">
+        <!-- 見出し -->
+         <div class="section-inner">
+          <div class="section-title">
+          <div class="big-title">Service</div>
+          <h1>Service</h1>
+        </div>
+          <p>-提供できるサービス-</p>
+      
+         <!-- サービス内容 -->
+          <div class="service-list">
+            <div class="service-item">
+              <div class="service-item-image-1">
+              <img src="images/service_computer.png" alt="Web・LPのアイコン">
+            </div>
+              <h2>Web・LP制作</h2>
+              <p>
+                コーポレートサイトなどのホームページ、<br>
+                LP（ランディングページ）などのデザイン<br>
+                から構築まで、一貫して対応いたします。<br>
+                お客様の想いやサービスの魅力がしっかり<br>
+                伝わるよう、見やすく使いやすい<br>
+                サイトづくりを心がけています。
+              </p>
+            </div>
+
+            <div class="service-item">
+              <div class="service-item-image-2">
+              <img src="images/service_telephone.png" alt="ビジュアル制作のアイコン">
+            </div>
+              <h2>ビジュアル制作</h2>
+              <p>
+                SNSやWebサイトで使用するバナー・ヘッ<br>
+                ダー・サムネイルなどのビジュアル制作を<br>
+                行なっています。伝えたい情報や世界観を<br>
+                視覚的にわかりやすく表現し、見る人の心<br>
+                に届くよう、丁寧にデザインします。<br>
+              </p>
+            </div>
+          </div>
+
+          <!-- 使用ツール -->
+           <div class="tool">
+            <h2>使用ツール</h2>
+            <p>
+              Figma / Photoshop / HTML / CSS <span>/</span><br class="br-sp"> JavaScript / PHP / WordPress
+            </p>
+           </div>
+        </div>
+      </section>
+
+      
+      <!---------- WORKS ---------->
+       <section id="works">
+        <!-- 見出し -->
+        <div class="section-inner">
+          <div class="section-title">
+          <div class="big-title">Works</div>
+          <h1>Works</h1>
+        </div>
+          <p>-制作実績-</p>
+          <!-- 実績画像 -->
+          <div class="works-list">
+            <div class="works-item">
+              <img src="images/skincare.png" alt="スキンケア製品のLP">
+            </div>
+            <div class="works-item">
+              <span>
+              <img src="images/banner.png" alt="バナー">
+            </span>
+            </div>
+          </div>
+          <a href="works.html"  class="btn-works">
+            <img src="images/button_more.png" alt="もっと読む">
+          </a>
+        </div>
+       </section>
+
+
+       <!---------- CONTACT ---------->
+       <section id="contact">
+        <!-- 見出し -->
+         <div class="section-inner">
+          <div class="section-title">
+          <div class="big-title">Contact</div>
+          <h1>Contact</h1>
+        </div>
+          <p>-お問い合わせ-</p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <p>
+                Webサイト制作やデザインのご相談など、<br>
+                お気軽にお問い合わせください。
+              </p>
+            </div>
+            <div class="contact-item">
+              <a href="#" class="btn-form">
+                <img src="images/button_form.png" alt="お問い合わせフォーム">
+              </a>
+            </div>
+          </div>
+         </div>
+       </section>
+
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <div class="footer-inner">
+      <!-- ロゴ -->
+       <div class="footer-logo">
+        <a href="index.html">
+       <img src="images/logo.png" alt="フッターのロゴ">
+      </a>
+      </div>
+
+       <!-- ナビゲーション -->
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- SNSアイコン -->
+         <div class="footer-sns">
+          <a href="">
+            <img src="images/x-twitter-brands-green.png" alt="Xのアイコン">
+          </a>
+          <a href="">
+            <img src="images/instagram-brands-green.png" alt="instagramのアイコン">
+          </a>
+         </div>
+
+        </div>
+      </footer>
+         <!-- コピーライト -->
+          <div class="copyright">
+            <small>&copy; irotogi. All right reserved.</small>
+          </div>
+</body>
+</html>
